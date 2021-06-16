@@ -51,13 +51,13 @@ input[type=submit]:hover {
     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
     <label for="country">Country</label>
-    <select id="country" name="country">
+    <select id="country" name="country" onchange="myFunction()" >
       <option value="australia">Australia</option>
       <option value="canada">Canada</option>
       <option value="usa">USA</option>
     </select>
 
-<input type="submit" value="Submit" onclick="myFunction()" >
+<input type="submit" value="Submit" >
   </form>
 </div>
 
