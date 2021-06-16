@@ -51,7 +51,7 @@ input[type=submit]:hover {
     <input type="text" id="lname" name="lastname" onkeyup="myFunction()"  placeholder="Your last name..">
 
     <label for="country">Country</label>
-    <select id="country" name="country" onchange="myFunction()" >
+    <select id="college" name="college" onchange="myFunction()" >
       <option value="australia">Australia</option>
       <option value="canada">Canada</option>
       <option value="usa">USA</option>
@@ -67,8 +67,8 @@ input[type=submit]:hover {
 <script>
 function myFunction() {
  var x=document.getElementById("fname").value;
-var y=document.getElementById("fname").value;
-var z=document.getElementById("fname").value;
+var y=document.getElementById("lname").value;
+var z=document.getElementById("college").value;
   document.getElementById("h6").innerHTML = x+y+z;
 }
 </script>
