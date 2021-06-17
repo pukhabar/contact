@@ -9,7 +9,7 @@ var ClassData = ["AJ_Mahila_College_Banmankhi","AM_Degree_College_Araria","Arari
 window.onload = function() {
     var Class = document.getElementById("Class");
     for (var x in ClassData) {
-        Class.options[Class.options.length] = new Option(x, x);
+        Class.options[Class.options.length] = new Option(ClassData[x], ClassData[x]);
     }
   }
   
