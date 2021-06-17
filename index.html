@@ -69,7 +69,9 @@ function myFunction() {
  var x=document.getElementById("fname").value;
 var y=document.getElementById("lname").value;
 var z=document.getElementById("college").value;
-  document.getElementById("h6").innerHTML = x+y+z;
+var a=x+y+z;
+var result= a.replace(/,/g, '-');
+  document.getElementById("h6").innerHTML = result;
 }
 </script>
 
