@@ -46,16 +46,14 @@ input[type=submit]:hover {
 <div class="container">
   <form>
     <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" onkeyup="myFunction()"   placeholder="Your name..">
+    <input type="text" id="fname" name="firstname" onkeyup="myFunction()" required  placeholder="First name">
 
     <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" onkeyup="myFunction()"  placeholder="Your last name..">
+    <input type="text" id="lname" name="lastname" onkeyup="myFunction()" required placeholder="Last name">
 
-    <label for="country">Country</label>
-    <select id="college" name="college" onchange="myFunction()" >
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
+    <label for="college">College name</label>
+    <select id="college" name="college" required onchange="myFunction()" >
+      <option value="">Select</option>
     </select>
 
 <a href='' id='submit' name='submit'>Submit</a>
@@ -64,6 +62,16 @@ input[type=submit]:hover {
 </body>
 
 <script>
+var ClassData = {"AJ_Mahila_College_Banmankhi","AM_Degree_College_Araria","Araria_College_Araria","Balrampur_College_Balrampur","BMT_Law_College","BD_College_Barsoi","Bhagwati_Mandir_College_Barari","BNC_College_Dhamdaha","DS_College_Katihar","Forbesganj_College_Forbesganj","GLM_College_Banmankhi","Gov_Degree_College_Baisi","Gov_Degree_College_Dhamdaha","KB_Jha_College_Katihar","KD_College_Raniganj","Marwari_College_Kishanganj","MHAND_College_Thakurganj","MJM_Mahila_College_Katihar","ML_Arya_College_Kasba","MLDPKY_College_Araria","ND_College_Rambagh","Nehru_College_Bahadurganj","Peoples_College_Araria","PS_Deegre_College_Harda","Purnea_College_Purnea","Purnea_Mahila_College_Purnia","RDS_College_Salmari","RKK_College_Purnea","RL_College_MadhavNagar","RY_College_Manihari","SC_Degree_College_Katihar","SNSY_College_Rambagh","YNP_College_Raniganj"
+}
+window.onload = function() {
+    var College = document.getElementById("College");
+    for (var x in CollegeData) {
+        College.options[College.options.length] = new Option(x, x);
+    }
+}
+
+
 function myFunction() {
  var x=document.getElementById("fname").value;
 var y=document.getElementById("lname").value;
