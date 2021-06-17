@@ -86,6 +86,9 @@ if (x!=''&&y!=''&&z!='')
 var a='https://wa.me/917979700192?text=Name- '+x+'%0AClass- '+y+'%0ACollege- '+z;
 var result= a.replace(/ /g, '%20');
   window.location = result;
+document.getElementById("name").value='';
+document.getElementById("class").value='';
+document.getElementById("College").value='';
   }
   else
   document.getElementById("submit").innerHTML = "Please fill all details.";
